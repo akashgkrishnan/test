@@ -73,5 +73,5 @@ print(D)
 
 print(D['A']) # if the key is in the dictionay then will return the  value else it will throw error
 
+print(D.get('AK','not found'))
 print(D.get('A','not found'))
-print(D.get('B','not found'))
