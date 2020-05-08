@@ -7,3 +7,4 @@ conftest files are used so that these fixtures can be made available to all test
 
 def test_fixture_demo(setup):
     print("i wil execute fixtures")
+    assert  10 == 20

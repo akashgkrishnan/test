@@ -12,3 +12,8 @@ def setup():
 def dataload():
     print('your data is being loaded')
     return ['akash', 'krishnan', 'india']
+
+
+@pytest.fixture(params=[('Chrome','akash')  , ('FireFox',), 'IE'])
+def crossbrowser(request):
+    return request.param

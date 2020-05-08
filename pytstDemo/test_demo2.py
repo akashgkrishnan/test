@@ -6,7 +6,7 @@ def test_assert():
     msg = 'hellp'
     assert msg == 'hellp', "the strings dont match"
 
-
+@pytest.mark.xfail
 def test_assertnew_credit():
     msg = 'hellp'
     assert msg == 'hellp', "the strings dont match"

@@ -25,6 +25,6 @@ import  pytest
 def test_hello_credit(setup):
     print('hello')
 
-
+@pytest.mark.skip
 def test_ccasetwo(setup):
     print("hi")
