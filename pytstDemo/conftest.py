@@ -1,19 +1,19 @@
 import pytest
 
 
-@pytest.fixture(scope='class')
+@pytest.fixture(scope="class")
 def setup():
-    print('i will be executed first')
+    print("I will be executing first")
     yield
-    print("i will be executed last")
+    print(" I will execute last")
 
 
-@pytest.fixture(scope='class')
-def dataload():
-    print('your data is being loaded')
-    return ['akash', 'krishnan', 'india']
+@pytest.fixture()
+def dataLoad():
+    print("user profile data is being created")
+    return ["Rahul","Shetty","rahulshettyacademy.com"]
 
 
-@pytest.fixture(params=[('Chrome','akash')  , ('FireFox',), 'IE'])
-def crossbrowser(request):
+@pytest.fixture(params=[("chrome","Rahul","shetty"), ("Firefox","shetty"), ("IE","SS")])
+def crossBrowser(request):
     return request.param
