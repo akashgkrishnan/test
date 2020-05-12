@@ -7,7 +7,7 @@ def pytest_addoption(parser):
         "--browser_name", action="store", default="chrome", help="default chrome"
     )
 
-@pytest.fixture(scope='class')
+@pytest.fixture()
 def setup(request):
     browser_name = request.config.getoption("browser_name")
     if browser_name == 'chrome':
